@@ -1,0 +1,214 @@
+@import url("common.css");
+@import url("animation.css");
+
+* {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+    display: none !important;
+}
+
+.font-esthetic {
+    font-family: 'Sacramento', cursive !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+.img-center-crop {
+    width: 13rem;
+    height: 13rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.btn-float {
+    right: 2vh;
+    z-index: 1030;
+    display: none;
+}
+
+html[data-bs-theme="dark"] .btn-float {
+    background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
+    backdrop-filter: blur(0.625rem);
+}
+
+html[data-bs-theme="light"] .btn-float {
+    background-color: rgba(var(--bs-light-rgb), 0.5) !important;
+    backdrop-filter: blur(0.625rem);
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1056;
+}
+
+/* Tema Wedding - Light Mode */
+html[data-bs-theme="light"] .color-theme-svg {
+    color: #8C5651; /* coklat gelap */
+    background-color: #FBE8D3; /* krem hangat */
+}
+
+html[data-bs-theme="light"] .bg-light-dark {
+    background-color: #FBE8D3; /* krem hangat */
+}
+
+html[data-bs-theme="light"] .bg-white-black {
+    background-color: #FFFFFF; /* putih bersih */
+}
+
+/* Tema Wedding - Dark Mode */
+html[data-bs-theme="dark"] .color-theme-svg {
+    color: #FBE8D3; /* krem terang */
+    background-color: #2E1E17; /* coklat tua */
+}
+
+html[data-bs-theme="dark"] .bg-light-dark {
+    background-color: #2E1E17; /* coklat tua */
+}
+
+html[data-bs-theme="dark"] .bg-white-black {
+    background-color: #000000; /* hitam pekat */
+}
+
+
+.bg-cover-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(0.5turn, transparent, black 10%, black 90%, transparent);
+}
+
+.width-loading {
+    width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .width-loading {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .width-loading {
+        width: 75%;
+    }
+}
+
+.slide-desktop {
+    transform: scale(1);
+    transition: transform 10s linear;
+}
+
+.slide-desktop-active {
+    transform: scale(1.15);
+}
+
+.no-gap-y {
+    margin-top: -0.75rem !important;
+    margin-bottom: -0.75rem !important;
+}
+
+
+/* Preloader Wedding Theme */
+.bg-wedding {
+    background-color: #FBE8D3 !important; /* krem hangat */
+}
+
+/* Overlay transparan untuk teks tengah desktop */
+html[data-bs-theme="light"] .bg-overlay-wedding {
+    background-color: rgba(255, 255, 255, 0.7); /* Putih lembut transparan */
+    backdrop-filter: blur(10px);
+}
+
+html[data-bs-theme="dark"] .bg-overlay-wedding {
+    background-color: rgba(44, 36, 30, 0.7); /* Coklat tua transparan */
+    backdrop-filter: blur(10px);
+}
+
+
+.progress-bar-wedding {
+    background-color: #8B5E3C !important; /* aksen emas */
+}
+
+.text-wedding {
+    color: #4B2E2B !important; /* coklat gelap */
+}
+
+/* Tema Preloader Pernikahan */
+
+/* Light Mode */
+html[data-bs-theme="light"] .bg-wedding {
+    background-color: #FBE8D3 !important;
+}
+
+html[data-bs-theme="light"] .progress-bar-wedding {
+    background-color: #8B5E3C !important;
+}
+
+html[data-bs-theme="light"] .text-wedding {
+    color: #4B2E2B !important;
+}
+html[data-bs-theme="light"] .bg-wedding2 {
+    background-color: #8C5651;
+    color: #E8C4A2;
+}
+
+/* Dark Mode */
+html[data-bs-theme="dark"] .bg-wedding {
+    background-color: #2E1E17 !important;
+}
+
+html[data-bs-theme="dark"] .progress-bar-wedding {
+    background-color: #A87E56 !important;
+}
+
+html[data-bs-theme="dark"] .text-wedding {
+    color: #FBE8D3 !important;
+}
+html[data-bs-theme="dark"] .bg-wedding2 {
+    background-color: #FBE8D3;
+    color: #2E1E17;
+}
+
+/* Welcome Page Button Style */
+html[data-bs-theme="light"] .btn-wedding {
+    background-color: #8B5E3C !important;
+    color: #fff !important;
+}
+
+html[data-bs-theme="dark"] .btn-wedding {
+    background-color: #A87E56 !important;
+    color: #2E1E17 !important;
+}
+
+html[data-bs-theme="light"] .btn-maps {
+    background-color: #FBE8D3 !important;
+    color: #2E1E17 !important;
+}
+
+html[data-bs-theme="dark"] .btn-maps {
+    background-color: #A87E56 !important;
+    color: #2E1E17 !important;
+}
+
+/* Default sembunyikan semua */
+.theme-image {
+    display: none;
+  }
+  
+  /* Tampilkan sesuai tema */
+  html[data-bs-theme="light"] .theme-light {
+    display: block;
+  }
+  
+  html[data-bs-theme="dark"] .theme-dark {
+    display: block;
+  }
